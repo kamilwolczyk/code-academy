@@ -4,3 +4,6 @@ E:\Drive\HeadChannel\Programming school\Programs\Hc.Kamil\Hc.Kamil.Ex3.Registrat
 E:\Drive\HeadChannel\Programming school\Programs\Hc.Kamil\Hc.Kamil.Ex3.RegistrationForm\bin\Debug\Hc.Kamil.Ex3.RegistrationForm.pdb
 E:\Drive\HeadChannel\Programming school\Programs\Hc.Kamil\Hc.Kamil.Ex3.RegistrationForm\obj\Debug\Hc.Kamil.Ex3.RegistrationForm.exe
 E:\Drive\HeadChannel\Programming school\Programs\Hc.Kamil\Hc.Kamil.Ex3.RegistrationForm\obj\Debug\Hc.Kamil.Ex3.RegistrationForm.pdb
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex3.RegistrationForm\bin\Debug\Hc.Kamil.Ex3.RegistrationForm.exe.config
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex3.RegistrationForm\obj\Debug\Hc.Kamil.Ex3.RegistrationForm.exe
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex3.RegistrationForm\obj\Debug\Hc.Kamil.Ex3.RegistrationForm.pdb
