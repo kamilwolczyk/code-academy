@@ -1,0 +1,9 @@
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.exe.config
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.exe
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.pdb
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.csprojResolveAssemblyReference.cache
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.exe
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.pdb
+E:\Drive\HeadChannel\Programming school\Programs\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.exe.config
+E:\Drive\HeadChannel\Programming school\Programs\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.exe
+E:\Drive\HeadChannel\Programming school\Programs\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.pdb

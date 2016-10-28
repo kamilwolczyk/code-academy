@@ -1,0 +1,6 @@
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\bin\Debug\Hc.Kamil.Ex1.Interfaces.exe.config
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\bin\Debug\Hc.Kamil.Ex1.Interfaces.exe
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\bin\Debug\Hc.Kamil.Ex1.Interfaces.pdb
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.exe
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.pdb
+E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.csprojResolveAssemblyReference.cache
