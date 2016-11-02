@@ -9,5 +9,6 @@
         }
         int a;
         int b;
+        int feature_branch_tomek;
     }
 }
