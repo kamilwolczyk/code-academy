@@ -7,5 +7,6 @@
             var presenter = new ArgumentPresenter();
             presenter.Show(args);
         }
+        int a;
     }
 }
