@@ -8,5 +8,6 @@
             presenter.Show(args);
         }
         int a;
+        int b;
     }
 }
