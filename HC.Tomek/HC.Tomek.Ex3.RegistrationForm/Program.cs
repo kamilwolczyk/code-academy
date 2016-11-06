@@ -10,6 +10,12 @@ namespace HC.Tomek.Ex3.RegistrationForm
     {
         static void Main(string[] args)
         {
+            ConsoleManager konsola = new ConsoleManager();
+            UserDatabase database = new UserDatabase();
+            konsola.SelectOption(new ConsoleManager(), database);
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
