@@ -32,14 +32,7 @@ namespace HC.Radek.Ex3.RegistrationForm
         {
             Credentials value;
             cred.TryGetValue(login, out value);
-            if(value != null)
-            {
-                return (value.getPassword() == pass);
-            }
-            else
-            {
-                return false;
-            }
+            return (value != null) ? (value.getPassword() == pass) : false;
         }
     }
 }
