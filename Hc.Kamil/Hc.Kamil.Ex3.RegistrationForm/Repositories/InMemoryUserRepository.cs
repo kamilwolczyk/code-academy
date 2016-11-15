@@ -4,7 +4,7 @@ using Hc.Kamil.Ex3.RegistrationForm.Models;
 
 namespace Hc.Kamil.Ex3.RegistrationForm.Repositories
 {
-    public class MockUserRepository : IUserRepository
+    public class InMemoryUserRepository : IUserRepository
     {
         private readonly List<User> _users = new List<User>();
 

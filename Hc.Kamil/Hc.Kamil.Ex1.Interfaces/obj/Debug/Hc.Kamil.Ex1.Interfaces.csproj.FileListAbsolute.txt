@@ -4,3 +4,6 @@ E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\bin\Debug\Hc.Kami
 E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.exe
 E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.pdb
 E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.csprojResolveAssemblyReference.cache
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\bin\Debug\Hc.Kamil.Ex1.Interfaces.exe.config
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.exe
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex1.Interfaces\obj\Debug\Hc.Kamil.Ex1.Interfaces.pdb

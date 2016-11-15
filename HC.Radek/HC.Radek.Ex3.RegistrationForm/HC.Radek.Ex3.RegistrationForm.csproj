@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F9D2AE4B-F413-4639-BAA4-E9D6F4E48DB9}</ProjectGuid>
+    <ProjectGuid>{AB589AE3-0A78-4A1E-A605-C414B7DDCAE5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hc.Kamil.Ex3.RegistrationForm</RootNamespace>
-    <AssemblyName>Hc.Kamil.Ex3.RegistrationForm</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>HC.Radek.Ex3.RegistrationForm</RootNamespace>
+    <AssemblyName>HC.Radek.Ex3.RegistrationForm</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -43,21 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthenticationController.cs" />
-    <Compile Include="Helpers\IValidationHelper.cs" />
-    <Compile Include="IAuthenticationController.cs" />
+    <Compile Include="MainController.cs" />
+    <Compile Include="Credentials.cs" />
+    <Compile Include="Decision.cs" />
+    <Compile Include="FileUserRepository.cs" />
+    <Compile Include="IPasswordEncryption.cs" />
+    <Compile Include="IUserRepository.cs" />
+    <Compile Include="IValidator.cs" />
+    <Compile Include="InMemoryUserRepository.cs" />
+    <Compile Include="PasswordEncryption.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\CsvFileUserRepository.cs" />
-    <Compile Include="Repositories\IUserRepository.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Repositories\InMemoryUserRepository.cs" />
-    <Compile Include="Helpers\ValidationHelper.cs" />
-    <Compile Include="Security\IHashProvider.cs" />
-    <Compile Include="Security\Md5HashProvider.cs" />
-    <Compile Include="View\ActionResult.cs" />
-    <Compile Include="View\IApplicationView.cs" />
-    <Compile Include="View\WindowsConsoleView.cs" />
+    <Compile Include="Validator.cs" />
+    <Compile Include="ConsoleView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

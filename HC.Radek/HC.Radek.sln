@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hc.Radek.Ex1.Interfaces", "AnimalFarm\Hc.Radek.Ex1.Interfaces.csproj", "{A1995B49-9BAA-49BF-831C-992C5A3575C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Radek.Ex2.Shop", "HC.Radek.Ex0\HC.Radek.Ex2.Shop.csproj", "{9DC9CDED-78DF-47A4-B8B2-AE436953E86A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Radek.Ex2.Shop", "ConsoleApplication1\HC.Radek.Ex2.Shop.csproj", "{9DC9CDED-78DF-47A4-B8B2-AE436953E86A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hc.Radek.Ex1.Interfaces", "HC.Radek.Ex1\Hc.Radek.Ex1.Interfaces.csproj", "{A1995B49-9BAA-49BF-831C-992C5A3575C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Radek.Ex3.RegistrationForm", "HC.Radek.Ex3.RegistrationForm\HC.Radek.Ex3.RegistrationForm.csproj", "{AB589AE3-0A78-4A1E-A605-C414B7DDCAE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9DC9CDED-78DF-47A4-B8B2-AE436953E86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9DC9CDED-78DF-47A4-B8B2-AE436953E86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC9CDED-78DF-47A4-B8B2-AE436953E86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC9CDED-78DF-47A4-B8B2-AE436953E86A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1995B49-9BAA-49BF-831C-992C5A3575C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB589AE3-0A78-4A1E-A605-C414B7DDCAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB589AE3-0A78-4A1E-A605-C414B7DDCAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB589AE3-0A78-4A1E-A605-C414B7DDCAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB589AE3-0A78-4A1E-A605-C414B7DDCAE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
