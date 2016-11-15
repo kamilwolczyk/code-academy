@@ -32,7 +32,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
             set;
         }
 
-        public bool CheckIfLoginExists(User user, UserDatabase database)
+        public bool CheckIfLoginExists(User user, IUserRepository database)
         {
             bool _loginOk = true;
             string _userLogin = user.Login;
@@ -47,7 +47,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
             }
             return _loginOk;
         }
-        public bool ValidatePassword(User user, UserDatabase database)
+        public bool ValidatePassword(User user, IUserRepository database)
         {
             bool _passwordOK = false;
             string _userPassword = user.Password;
@@ -61,7 +61,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
                 _passwordOK = false;
             return _passwordOK;
         }
-        public bool CheckPassword(User user, UserDatabase database)
+        public bool CheckPassword(User user, IUserRepository database)
         {
             bool _passwordOK = false;
             try
