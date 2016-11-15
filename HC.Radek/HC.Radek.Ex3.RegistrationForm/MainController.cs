@@ -15,11 +15,18 @@ namespace HC.Radek.Ex3.RegistrationForm
         private string login;
         private string pass;
 
+        private IPasswordEncryption PasswordEncryption;
+
         public MainController(IValidator _validator, IUserRepository _model, ConsoleView _view)
         {
             validator = _validator;
             model = _model;
             view = _view;
+        }
+
+        public void setPasswordEncryption(IPasswordEncryption _passwordEncryption)
+        {
+            PasswordEncryption = _passwordEncryption;
         }
 
         public void MainSite()
@@ -28,7 +35,7 @@ namespace HC.Radek.Ex3.RegistrationForm
             var decision = view.GetDecision();
             if (IsMainDecisionValid(decision))
             {
-                SetCredentials();
+                ShowSetCredentialsDialogs();
                 if (decision == Decision.Login)
                 {
                     Login();
@@ -72,7 +79,7 @@ namespace HC.Radek.Ex3.RegistrationForm
             }
         }
 
-        private void SetCredentials()
+        private void ShowSetCredentialsDialogs()
         {
             view.RegisterLogin();
             login = Console.ReadLine();
@@ -92,12 +99,12 @@ namespace HC.Radek.Ex3.RegistrationForm
 
         private bool ValidateCheckCredential(string login, string password)
         {
-            return model.Log(login, password);
+            return model.Log(login, PasswordEncryption.GetHash(password));
         }
 
         private void AddCredentials(string login, string password)
         {
-            model.Add(login, password);
+            model.Add(login, PasswordEncryption.GetHash(password));
         }
 
         private void Wait()

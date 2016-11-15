@@ -59,8 +59,6 @@ namespace HC.Radek.Ex3.RegistrationForm
 
         private void Save()
         {
-            if (!File.Exists(path))
-            {
                 // Create a file to write to.
                 using (StreamWriter sw = File.CreateText(path))
                 {
@@ -69,7 +67,6 @@ namespace HC.Radek.Ex3.RegistrationForm
                         sw.WriteLine(singleCredential.Value.GetLogin() + ";" + singleCredential.Value.getPassword());
                     }
                 }
-            }
         }
     }
 }
