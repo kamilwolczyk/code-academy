@@ -9,7 +9,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
     class ConsoleManager
     {
         
-        public void SelectOption(ConsoleManager konsola, IUserRepository database)
+        public void SelectOption(ConsoleManager konsola, IUserRepository database, IValidator validator)
         {
             int option = 0;
             do
@@ -35,8 +35,8 @@ namespace HC.Tomek.Ex3.RegistrationForm
                 {
                     case 1:
                         user = konsola.InputCredentials();
-                        if (user.CheckIfLoginExists(user, database) == true)
-                            if (user.CheckPassword(user, database) == true)
+                        if (validator.CheckIfLoginExists(user, database) == true)
+                            if (validator.CheckPassword(user, database) == true)
                             {
                                 konsola.UserLoginMessage();
                             }
@@ -53,8 +53,8 @@ namespace HC.Tomek.Ex3.RegistrationForm
                         break;
                     case 2:
                         user = konsola.InputCredentials();
-                        if (user.CheckIfLoginExists(user, database) == false)
-                            if (user.ValidatePassword(user, database))
+                        if (validator.CheckIfLoginExists(user, database) == false)
+                            if (validator.ValidatePassword(user, database))
                             {
                                 database.AddUser(user);
                             }
