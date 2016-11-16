@@ -10,11 +10,18 @@ namespace HC.Tomek.Ex3.RegistrationForm
     {
         static void Main(string[] args)
         {
+            IUserRepository database = new InFileUserRepository();
+            database.ReadUser();
+           
             ConsoleManager konsola = new ConsoleManager();
-            UserDatabase database = new UserDatabase();
             konsola.SelectOption(new ConsoleManager(), database);
-
             Console.WriteLine("Press any key to exit.");
+
+            
+            //foreach (User i in database.GetUsersList())
+            //{
+            //    Console.WriteLine($"Login: {i.Login} Password: {i.Password}");
+            //}
             Console.ReadKey();
         }
     }

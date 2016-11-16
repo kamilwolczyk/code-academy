@@ -9,7 +9,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
     class ConsoleManager
     {
         
-        public void SelectOption(ConsoleManager konsola, UserDatabase database)
+        public void SelectOption(ConsoleManager konsola, IUserRepository database)
         {
             int option = 0;
             do

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HC.Tomek.Ex3.RegistrationForm
 {
-    public class UserDatabase
+    public class InMemoryUserRepository : IUserRepository
     {
         private List<User> database = new List<User>();
 
@@ -18,6 +18,10 @@ namespace HC.Tomek.Ex3.RegistrationForm
         public void AddUser(User user)
         {
             database.Add(user);
+        }
+        public void ReadUser()
+        {
+
         }
     }
 }
