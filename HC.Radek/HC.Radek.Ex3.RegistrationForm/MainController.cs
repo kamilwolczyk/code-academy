@@ -111,5 +111,8 @@ namespace HC.Radek.Ex3.RegistrationForm
         {
             view.Wait();
         }
+
+
+
     }
 }
