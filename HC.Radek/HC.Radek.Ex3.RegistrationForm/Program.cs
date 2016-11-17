@@ -10,9 +10,8 @@ namespace HC.Radek.Ex3.RegistrationForm
     {
         static void Main(string[] args)
         {
-            //new MainController(new Validator(), new InMemoryUserRepository(), new ConsoleView()).MainSite();
             MainController Controller = new MainController(new Validator(), new FileUserRepository(), new ConsoleView());
-            Controller.setPasswordEncryption(new PasswordEncryption());
+            Controller.setPasswordEncryption(new AdvancedPasswordEncryption());
             Controller.MainSite();
 
             

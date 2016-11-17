@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace HC.Radek.Ex3.RegistrationForm
 {
-    class FileUserRepository : IUserRepository
+    class FileUserRepository : Repository.BaseRepository, IUserRepository
     {
         private string path = @"d:\temp\MyTest.txt";
-        private IDictionary<string, Credentials> cred;
 
         public FileUserRepository()
         {
@@ -31,23 +30,10 @@ namespace HC.Radek.Ex3.RegistrationForm
         }
         
 
-        public void Add(string login, string pass)
+        public new void Add(string login, string pass)
         {
-            cred.Add(login, new Credentials(login, pass));
+            base.Add(login, pass);
             Save();
-        }
-
-        public bool IsLogin(string login)
-        {
-            Credentials value;
-            return cred.TryGetValue(login, out value);
-        }
-
-        public bool Log(string login, string pass)
-        {
-            Credentials value;
-            cred.TryGetValue(login, out value);
-            return (value != null)? (value.getPassword() == pass):false;
         }
 
         private void Save()

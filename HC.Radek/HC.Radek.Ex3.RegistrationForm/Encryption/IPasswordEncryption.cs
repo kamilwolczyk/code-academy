@@ -3,5 +3,6 @@
     interface IPasswordEncryption
     {
         string GetHash(string value);
+        bool VerifyHashedPassword(string encryptedPassword, string Password);
     }
 }

@@ -99,7 +99,7 @@ namespace HC.Radek.Ex3.RegistrationForm
 
         private bool ValidateCheckCredential(string login, string password)
         {
-            return model.Log(login, PasswordEncryption.GetHash(password));
+            return PasswordEncryption.VerifyHashedPassword(model.GetPasswordByLogin(login), password);
         }
 
         private void AddCredentials(string login, string password)
