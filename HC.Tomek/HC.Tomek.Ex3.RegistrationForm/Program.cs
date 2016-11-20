@@ -18,9 +18,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
             ConsoleManager konsola = new ConsoleManager();
             konsola.SelectOption(new ConsoleManager(), database, validator);
             Console.WriteLine("Press any key to exit.");
-            //MD5 md5Hash = MD5.Create();
-            //HashPassword hashpass = new HashPassword();
-            //Console.WriteLine(hashpass.GetMd5Hash(md5Hash, "tomek"));
+            
 
             //foreach (User i in database.GetUsersList())
             //{

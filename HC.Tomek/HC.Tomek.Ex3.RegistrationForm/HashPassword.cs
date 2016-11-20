@@ -10,11 +10,11 @@ namespace HC.Tomek.Ex3.RegistrationForm
 {
     public class HashPassword
     {
-        public string GetMd5Hash(MD5 md5Hash, string password)
+        public string GetHash(SHA512 sha512Hash, string password)
         {
 
             // Convert the input string to a byte array and compute the hash.
-            byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+            byte[] data = sha512Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
 
             // Create a new Stringbuilder to collect the bytes
             // and create a string.

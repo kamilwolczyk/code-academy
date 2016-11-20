@@ -13,7 +13,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
         public void SelectOption(ConsoleManager konsola, IUserRepository database, IValidator validator)
         {
             int option = 0;
-            MD5 md5Hash = MD5.Create();
+            SHA512 sha512Hash = SHA512.Create();
             HashPassword hashpass = new HashPassword();
             do
             {
@@ -38,7 +38,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
                 {
                     case 1:
                         user = konsola.InputCredentials();
-                        user.Password = hashpass.GetMd5Hash(md5Hash, user.Password);
+                        user.Password = hashpass.GetHash(sha512Hash, user.Password);
                         if (validator.CheckIfLoginExists(user, database) == true)
                             if (validator.CheckPassword(user, database) == true)
                             {

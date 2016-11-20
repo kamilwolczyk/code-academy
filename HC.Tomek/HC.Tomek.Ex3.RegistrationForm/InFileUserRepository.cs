@@ -12,7 +12,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
     {
         private List<User> database = new List<User>();
         private const string path = @"c:\temp\MyTest.txt";
-        MD5 md5Hash = MD5.Create();
+        SHA512 sha512Hash = SHA512.Create();
         HashPassword hashpass = new HashPassword();
 
         public IEnumerable<User> GetUsersList()
@@ -23,7 +23,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
         public void AddUser(User user)
         {
             //database.Add(user);
-            user.Password = hashpass.GetMd5Hash(md5Hash, user.Password);
+            user.Password = hashpass.GetHash(sha512Hash, user.Password);
             if (!File.Exists(path))
             {
                 // Create a file to write to.
