@@ -10,10 +10,5 @@ namespace HC.Radek.Ex3.RegistrationForm
     class InMemoryUserRepository : Repository.BaseRepository, IUserRepository
     {
         
-        public InMemoryUserRepository()
-        {
-            cred = new Dictionary<string, Credentials>();
-        }
-
     }
 }

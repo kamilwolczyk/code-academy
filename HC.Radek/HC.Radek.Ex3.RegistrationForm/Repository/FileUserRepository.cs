@@ -9,11 +9,10 @@ namespace HC.Radek.Ex3.RegistrationForm
 {
     class FileUserRepository : Repository.BaseRepository, IUserRepository
     {
-        private string path = @"d:\temp\MyTest.txt";
+        private const string path = @"d:\temp\MyTest.txt";
 
         public FileUserRepository()
         {
-            cred = new Dictionary<string, Credentials>();
             // Open the file to read from.
             if (File.Exists(path))
             {
@@ -28,9 +27,9 @@ namespace HC.Radek.Ex3.RegistrationForm
                 }
             }
         }
-        
 
-        public new void Add(string login, string pass)
+
+        public override void Add(string login, string pass)
         {
             base.Add(login, pass);
             Save();

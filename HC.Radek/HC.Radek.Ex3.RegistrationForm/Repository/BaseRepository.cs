@@ -8,7 +8,8 @@ namespace HC.Radek.Ex3.RegistrationForm.Repository
 {
     abstract class BaseRepository
     {
-        protected IDictionary<string, Credentials> cred;
+
+        protected IDictionary<string, Credentials> cred = new Dictionary<string, Credentials>();
 
         public bool IsLogin(string login)
         {
@@ -30,7 +31,7 @@ namespace HC.Radek.Ex3.RegistrationForm.Repository
             return (value == null) ? "" : value.getPassword();
         }
 
-        public void Add(string login, string pass)
+        public virtual void Add(string login, string pass)
         {
             cred.Add(login, new Credentials(login, pass));
 
