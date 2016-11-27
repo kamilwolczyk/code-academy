@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Security.Cryptography;
 
 namespace HC.Tomek.Ex3.RegistrationForm
 {
@@ -11,6 +12,8 @@ namespace HC.Tomek.Ex3.RegistrationForm
     {
         private List<User> database = new List<User>();
         private const string path = @"c:\temp\MyTest.txt";
+        SHA512 sha512Hash = SHA512.Create();
+        HashPassword hashpass = new HashPassword();
 
         public IEnumerable<User> GetUsersList()
         {
@@ -20,7 +23,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
         public void AddUser(User user)
         {
             //database.Add(user);
-            
+            user.Password = hashpass.GetHash(sha512Hash, user.Password);
             if (!File.Exists(path))
             {
                 // Create a file to write to.
@@ -42,6 +45,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
 
         public void ReadUser()
         {
+            database.Clear();
             if (File.Exists(path))
             {
                 using (StreamReader sr = File.OpenText(path))

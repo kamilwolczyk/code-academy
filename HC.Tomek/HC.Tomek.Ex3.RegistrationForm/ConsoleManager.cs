@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +13,8 @@ namespace HC.Tomek.Ex3.RegistrationForm
         public void SelectOption(ConsoleManager konsola, IUserRepository database, IValidator validator)
         {
             int option = 0;
+            SHA512 sha512Hash = SHA512.Create();
+            HashPassword hashpass = new HashPassword();
             do
             {
                 Console.WriteLine("[1] Zaloguj");
@@ -35,6 +38,7 @@ namespace HC.Tomek.Ex3.RegistrationForm
                 {
                     case 1:
                         user = konsola.InputCredentials();
+                        user.Password = hashpass.GetHash(sha512Hash, user.Password);
                         if (validator.CheckIfLoginExists(user, database) == true)
                             if (validator.CheckPassword(user, database) == true)
                             {
