@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Tomek.Ex2.Objects", "HC.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Tomek.Ex3.RegistrationForm", "HC.Tomek.Ex3.RegistrationForm\HC.Tomek.Ex3.RegistrationForm.csproj", "{9FDC280C-DB78-4462-99C8-890E8591E8D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Tomek.Ex4.CashDispenser", "HC.Tomek.Ex4.CashDispenser\HC.Tomek.Ex4.CashDispenser.csproj", "{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9FDC280C-DB78-4462-99C8-890E8591E8D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FDC280C-DB78-4462-99C8-890E8591E8D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FDC280C-DB78-4462-99C8-890E8591E8D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

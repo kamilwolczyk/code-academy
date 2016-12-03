@@ -53,5 +53,9 @@ namespace HC.Tomek.Ex3.RegistrationForm
 
             return _passwordOK;
         }
+        public override string ToString()
+        {
+            return "ble";
+        }
     }
 }
