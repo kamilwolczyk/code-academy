@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Tomek.Ex3.RegistrationFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Tomek.Ex4.CashDispenser", "HC.Tomek.Ex4.CashDispenser\HC.Tomek.Ex4.CashDispenser.csproj", "{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{8F70718D-6A56-42EB-A0CD-8BBE01C6AC37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CACAD7D1-8DBF-4BFE-89FC-72075FF2F261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F70718D-6A56-42EB-A0CD-8BBE01C6AC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F70718D-6A56-42EB-A0CD-8BBE01C6AC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F70718D-6A56-42EB-A0CD-8BBE01C6AC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F70718D-6A56-42EB-A0CD-8BBE01C6AC37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
