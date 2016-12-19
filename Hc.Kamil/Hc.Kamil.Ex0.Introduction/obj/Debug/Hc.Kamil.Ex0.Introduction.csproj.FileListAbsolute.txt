@@ -4,3 +4,9 @@ E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex0.Introduction\bin\Debug\Hc.Ka
 E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex0.Introduction\obj\Debug\Hc.Kamil.Ex0.Introduction.exe
 E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex0.Introduction\obj\Debug\Hc.Kamil.Ex0.Introduction.pdb
 E:\Drive\HeadChannel\Learning\Hc.Kamil\Hc.Kamil.Ex0.Introduction\obj\Debug\Hc.Kamil.Ex0.Introduction.csprojResolveAssemblyReference.cache
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex0.Introduction\bin\Debug\Hc.Kamil.Ex0.Introduction.exe.config
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex0.Introduction\bin\Debug\Hc.Kamil.Ex0.Introduction.exe
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex0.Introduction\bin\Debug\Hc.Kamil.Ex0.Introduction.pdb
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex0.Introduction\obj\Debug\Hc.Kamil.Ex0.Introduction.csprojResolveAssemblyReference.cache
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex0.Introduction\obj\Debug\Hc.Kamil.Ex0.Introduction.exe
+E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex0.Introduction\obj\Debug\Hc.Kamil.Ex0.Introduction.pdb

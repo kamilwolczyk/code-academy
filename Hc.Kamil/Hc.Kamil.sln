@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hc.Kamil.Ex2.Objects", "Hc.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hc.Kamil.Ex3.RegistrationForm", "Hc.Kamil.Ex3.RegistrationForm\Hc.Kamil.Ex3.RegistrationForm.csproj", "{F9D2AE4B-F413-4639-BAA4-E9D6F4E48DB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hc.Kamil.Ex4.Atm", "Hc.Kamil.Ex4.Atm\Hc.Kamil.Ex4.Atm.csproj", "{A24E16C3-2E88-4551-A2AA-C4744C4E94BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hc.Kamil.Ex5.MvcRouting", "Hc.Kamil.Ex5.MvcRouting\Hc.Kamil.Ex5.MvcRouting.csproj", "{EBD6AE1C-F6C5-4E3D-B801-C5C08B8A97D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{F9D2AE4B-F413-4639-BAA4-E9D6F4E48DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9D2AE4B-F413-4639-BAA4-E9D6F4E48DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9D2AE4B-F413-4639-BAA4-E9D6F4E48DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24E16C3-2E88-4551-A2AA-C4744C4E94BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24E16C3-2E88-4551-A2AA-C4744C4E94BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24E16C3-2E88-4551-A2AA-C4744C4E94BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24E16C3-2E88-4551-A2AA-C4744C4E94BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD6AE1C-F6C5-4E3D-B801-C5C08B8A97D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD6AE1C-F6C5-4E3D-B801-C5C08B8A97D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD6AE1C-F6C5-4E3D-B801-C5C08B8A97D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD6AE1C-F6C5-4E3D-B801-C5C08B8A97D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
