@@ -1,0 +1,30 @@
+﻿@model HC.Radek.Ex5.Routing.Models.Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ConfirmationView</title>
+</head>
+<body>
+    <div> 
+        Dziękujemy za zakupy!<br/>
+        Towar zostanie wysłany do: <br/>
+        
+                @Model.FirstName
+                 
+                @Model.LastName
+                (
+                @Model.Age
+                )<br/>
+                @Model.Address
+
+
+
+    </div>
+</body>
+</html>
