@@ -16,11 +16,13 @@ namespace HC.Tomek.Ex5.Routing
             routes.MapRoute("ShowDate", "jest/dzien/{format}", new { controller = "Home", action = "Date", format = UrlParameter.Optional });
             routes.MapRoute("ShowDateTime", "jest/{format}", new { controller = "Home", action = "DateTime", format = UrlParameter.Optional });
             routes.MapRoute("ShowPerson", "osoba/{id}", new { controller = "Person", action = "Index", id = UrlParameter.Optional });
+            routes.MapRoute("ShowCar", "autka", new { controller = "Car", action = "Index" });
+            routes.MapRoute("ShowForm", "formularz", new { controller = "Form", action = "Form" });
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "MainPage", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "MainPage", id=UrlParameter.Optional}
             );
         }
     }

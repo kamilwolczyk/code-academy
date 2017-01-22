@@ -10,7 +10,7 @@ namespace HC.Tomek.Ex5.Routing.Controllers
 {
     public class PersonController : Controller
     {
-        // GET: Person
+        // GET: Person -- try to add [HttpMethod(Get)] attribute
         public ActionResult Index(int? id)
         {
             PersonService personService = new PersonService();

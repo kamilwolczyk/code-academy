@@ -1,0 +1,22 @@
+﻿
+@model HC.Tomek.Ex5.Routing.Models.CarList
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @foreach (var car in Model.Cars)
+        {
+            <div>@car.Marka</div>
+        }
+    </div>
+</body>
+</html>

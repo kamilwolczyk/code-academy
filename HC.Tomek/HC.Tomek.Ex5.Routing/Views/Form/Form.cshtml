@@ -1,0 +1,47 @@
+﻿@model Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Form</title>
+</head>
+<body>
+    @*<form method="post">
+        <div>Name<input type="text" name="Name"/></div>
+        <div>Age<input type="text" name="Age"/></div>
+        <div><input type="submit" value="Send"/></div>
+    </form>*@
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+            <table>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Imie)</td>
+                    <td>@Html.TextBoxFor(model => model.Imie)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Nazwisko)</td>
+                    <td>@Html.TextBoxFor(model => model.Nazwisko)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Wiek)</td>
+                    <td>@Html.TextBoxFor(model => model.Wiek)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Adres)</td>
+                    <td>@Html.TextBoxFor(model => model.Adres)</td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Send" /></td>
+                </tr>
+
+            </table>
+    }
+</body>
+</html>

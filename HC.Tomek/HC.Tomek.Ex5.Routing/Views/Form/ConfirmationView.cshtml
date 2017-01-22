@@ -1,0 +1,23 @@
+﻿
+@model Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ConfirmationView</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <p>Dziękujemy za wypełnienie formularza. 
+           Wysyłamy towar do @Html.DisplayTextFor(@model => @model.Imie) @Html.DisplayTextFor(@model => @model.Nazwisko)
+           na adres @Html.DisplayTextFor(@model => @model.Adres)
+       </p>
+    }
+</body>
+</html>

@@ -10,11 +10,11 @@ namespace HC.Tomek.Ex5.Routing.Services
     {
         public Person GetPerson(Person person, int? id)
         {
-            person.Name = "Janusz";
+            person.Imie = "Janusz";
             if (id.HasValue)
-                person.Age = 30 + (int)id;
+                person.Wiek = 30 + (int)id;
             else
-                person.Age = 30;
+                person.Wiek = 30;
             return person;
         }
     }
