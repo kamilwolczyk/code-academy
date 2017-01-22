@@ -10,12 +10,7 @@ namespace HC.Radek.Ex5.Routing.Services
     {
         public Person GetPerson(Person person, int? id)
         {
-            person.FirstName = "Janusz";
-            if (id.HasValue)
-                person.Age = 30 + (int)id;
-            else
-                person.Age = 30;
-            return person;
+           return person;
         }
     }
 }

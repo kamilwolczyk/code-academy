@@ -147,6 +147,7 @@
     <Content Include="Views\Car\Index.cshtml" />
     <Content Include="Views\Form\Form.cshtml" />
     <Content Include="Views\Form\ConfirmationView.cshtml" />
+    <Content Include="Views\Form\NotAdultView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

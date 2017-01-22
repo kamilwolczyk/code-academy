@@ -13,8 +13,14 @@ namespace HC.Radek.Ex5.Routing.Models
         [Required]
         public string LastName { get; set; }
         [Required]
-        public int Age { get; set; }
+        public string Street { get; set; }
         [Required]
-        public string Address { get; set; }
+        public string HouseNumber { get; set; }
+        [Required]
+        public string City { get; set; }
+        [Required]
+        public string CityCode { get; set; }
+        [Required]
+        public string BirthDate { get; set; }
     }
 }

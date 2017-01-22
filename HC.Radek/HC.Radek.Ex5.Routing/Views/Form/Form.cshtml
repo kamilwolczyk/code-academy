@@ -15,6 +15,7 @@
         @using (Html.BeginForm())
         {
             @Html.ValidationSummary()
+            //@Html.ValidationMessage("age")
             <table>
                 <tr>
                     <td>@Html.LabelFor(model => model.FirstName)</td>
@@ -25,13 +26,29 @@
                     <td>@Html.TextBoxFor(model => model.LastName)  </td>
                 </tr>
                 <tr>
-                    <td>@Html.LabelFor(model => model.Age)</td>
-                    <td>@Html.TextBoxFor(model => model.Age)</td>
+                    <td>@Html.LabelFor(model => model.Street)</td>
+                    <td>@Html.TextBoxFor(model => model.Street)</td>
                 </tr>
                 <tr>
-                    <td>@Html.LabelFor(model => model.Address)</td>
-                    <td>@Html.TextBoxFor(model => model.Address)</td>
+                    <td>@Html.LabelFor(model => model.HouseNumber)</td>
+                    <td>@Html.TextBoxFor(model => model.HouseNumber)</td>
                 </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.City)</td>
+                    <td>@Html.TextBoxFor(model => model.City)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.CityCode)</td>
+                    <td>@Html.TextBoxFor(model => model.CityCode)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.BirthDate)
+                    (yyyy-mm-dd)</td>
+                    <td>@Html.TextBoxFor(model => model.BirthDate)</td>
+                </tr>
+
+
+
                 <tr>
                     <td colspan="2"><input type="submit" name="submit" value="add" /></td>
                     
