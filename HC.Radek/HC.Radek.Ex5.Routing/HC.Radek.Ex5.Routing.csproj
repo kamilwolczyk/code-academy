@@ -135,6 +135,7 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PersonService.cs" />
+    <Compile Include="Validators\BirthValidatorAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config">
