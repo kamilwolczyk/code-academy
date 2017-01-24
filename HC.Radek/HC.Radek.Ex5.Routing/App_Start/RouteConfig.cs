@@ -12,12 +12,14 @@ namespace HC.Tomek.Ex5.Routing
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.MapRoute("ShowTime", "jest/godzina/{format}", new { controller = "Home", action = "Time", format = UrlParameter.Optional });
-            routes.MapRoute("ShowDate", "jest/dzien/{format}", new { controller = "Home", action = "Date", format = UrlParameter.Optional });
-            routes.MapRoute("ShowDateTime", "jest/{format}", new { controller = "Home", action = "DateTime", format = UrlParameter.Optional });
-            routes.MapRoute("ShowPerson", "osoba/{id}", new { controller = "Person", action = "Index", id = UrlParameter.Optional });
-            routes.MapRoute("Car", "autka", new { controller = "Car", action = "Index", id = UrlParameter.Optional });
-            routes.MapRoute("Form", "form", new { controller = "Form", action = "Form", id = UrlParameter.Optional });
+            //routes.MapRoute("ShowTime", "jest/godzina/{format}", new { controller = "Home", action = "Time", format = UrlParameter.Optional });
+            //routes.MapRoute("ShowDate", "jest/dzien/{format}", new { controller = "Home", action = "Date", format = UrlParameter.Optional });
+            //routes.MapRoute("ShowDateTime", "jest/{format}", new { controller = "Home", action = "DateTime", format = UrlParameter.Optional });
+            //routes.MapRoute("ShowPerson", "osoba/{id}", new { controller = "Person", action = "Index", id = UrlParameter.Optional });
+            //routes.MapRoute("Car", "autka", new { controller = "Car", action = "Index", id = UrlParameter.Optional });
+            routes.MapRoute("PersonForm", "", new { controller = "Form", action = "Form", id = UrlParameter.Optional });
+            routes.MapRoute("About", "about", new { controller = "About", action = "Index", id = UrlParameter.Optional });
+            //routes.MapRoute("Form", "form", new { controller = "Form", action = "Form", id = UrlParameter.Optional });
 
             routes.MapRoute(
                 name: "Default",

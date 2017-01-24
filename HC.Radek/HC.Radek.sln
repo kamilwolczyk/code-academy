@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Radek.Ex3.RegistrationFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Radek.Ex4.ATM", "HC.Radek.Ex4.ATM\HC.Radek.Ex4.ATM.csproj", "{8F29C5A2-EBCA-45DF-85BB-2F055CD969FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Radek.Ex5.Routing", "HC.Radek.Ex5.Routing\HC.Radek.Ex5.Routing.csproj", "{B25D2FB6-D0D3-4AED-BCF6-7BB2D6E9C1A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HC.Radek.Ex5.MVC", "HC.Radek.Ex5.Routing\HC.Radek.Ex5.MVC.csproj", "{B25D2FB6-D0D3-4AED-BCF6-7BB2D6E9C1A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

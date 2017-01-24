@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Moja zajefajna strona w ASP.NET MVC</title>
+</head>
+<body>
+    <div><img src="/Content/Images/headchannel-logo.png" /></div>
+    <div> 
+        @Html.ActionLink("Person Form","Form","Form", null, null)
+        @Html.ActionLink("About", "Index", "About", null, null)
+    </div>
+    <div> @RenderBody()   </div>
+    <div> 2017 Radek Chmielewski   </div>
+</body>
+</html>

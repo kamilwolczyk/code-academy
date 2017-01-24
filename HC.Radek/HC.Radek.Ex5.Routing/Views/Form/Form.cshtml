@@ -1,21 +1,12 @@
-﻿@model HC.Radek.Ex5.Routing.Models.Person
+﻿@using HC.Radek.Ex5.Routing.Extensions;
+@model HC.Radek.Ex5.Routing.Models.Person
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/MyLayout.cshtml";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Form</title>
-</head>
-<body>
-    <div> 
+ 
         @using (Html.BeginForm())
         {
             @Html.ValidationSummary()
-            //@Html.ValidationMessage("age")
             <table>
                 <tr>
                     <td>@Html.LabelFor(model => model.FirstName)</td>
@@ -45,20 +36,14 @@
                     <td>@Html.LabelFor(model => model.BirthDate)</td>
                     <td>@Html.TextBoxFor(model => model.BirthDate)</td>
                 </tr>
-
-
-
+                <tr>
+                    <td colspan="2">@Html.MyHelloWorld(3)</td>
+                </tr>
                 <tr>
                     <td colspan="2"><input type="submit" name="submit" value="add" /></td>
                     
                 </tr>
             </table>
         }
-        @*<form method="post">
-            <div>First name <input type="text" name="Name" /></div>
-            <div>Age <input type="text" name="Age" /></div>
-            <div><input type="submit" name="submit" value="add" /></div>
-        </form>*@
-    </div>
-</body>
-</html>
+ 
+
