@@ -22,12 +22,12 @@ namespace HC.Radek.Ex5.Routing.Models
 
         [Required]
         //[StringLength(6)]
-        [RegularExpression("^[0-9]{2}-[0-9]{3}$", ErrorMessage = "Invalid City Code")]
-        //[CodeStateValidator]
+        //[RegularExpression("^[0-9]{2}-[0-9]{3}$", ErrorMessage = "Invalid City Code")]
+        [CodeStateValidator]
         public string CityCode { get; set; }
 
         [Required]
-        [RegularExpression("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", ErrorMessage = "Invalid Birth Date")]
+        //[RegularExpression("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", ErrorMessage = "Invalid Birth Date")]
         [BirthValidator]
         [Display(Name = "Birth date (yyyy-mm-dd)")]
         public string BirthDate { get; set; }
