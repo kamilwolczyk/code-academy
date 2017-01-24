@@ -1,11 +1,11 @@
-﻿using HC.Tomek.Ex5.Routing.Models;
+﻿using HC.Tomek.Ex6.Forms.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace HC.Tomek.Ex5.Routing.Controllers
+namespace HC.Tomek.Ex6.Forms.Controllers
 {
     public class FormController : Controller
     {
@@ -18,14 +18,9 @@ namespace HC.Tomek.Ex5.Routing.Controllers
         [HttpPost]
         public ActionResult Form(Person person)
         {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-            //write to database
-
-            
-            return View("ConfirmationView", person);
+            if (!ModelState.IsValid) return View();
+            else
+            return View("Confirmation");
         }
     }
 }

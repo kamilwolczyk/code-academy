@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Layout</title>
+</head>
+<body>
+    <div><img src="https://www.headchannel.co.uk/media/1001/headchannel-logo.png" /></div>
+    @Html.RouteLink("Registration Form","Form")
+    @Html.RouteLink("About","About-us")
+    <div>@RenderBody()</div>
+    <div>Copywrite 2017</div>
+</body>
+</html>
