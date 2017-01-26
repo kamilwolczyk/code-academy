@@ -9,12 +9,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Layout</title>
+    <link href="~/Content/Style.css" rel="stylesheet"/>
 </head>
 <body>
-    <div><img src="https://www.headchannel.co.uk/media/1001/headchannel-logo.png" /></div>
-    @Html.RouteLink("Registration Form","Form")
-    @Html.RouteLink("About","About-us")
-    <div>@RenderBody()</div>
-    <div>Copywrite 2017</div>
+    <header><img src="https://www.headchannel.co.uk/media/1001/headchannel-logo.png" />@RenderSection("Title",false)</header>
+    <nav>@Html.RouteLink("Registration Form","Form")
+    @Html.RouteLink("About","About-us")</nav>
+    <aside class="ads1">@Html.Partial("Ads")</aside>
+    <aside class="ads">@Html.Action("Index", "Ads")</aside>
+    <section>@RenderBody()</section>
+    <footer>Copywrite 2017 @RenderSection("Number",false)</footer>
 </body>
 </html>

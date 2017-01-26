@@ -9,7 +9,7 @@ namespace HC.Tomek.Ex6.Forms.Controllers
 {
     public class FormController : Controller
     {
-        // GET: Form
+        
         public ActionResult Form()
         {
             return View();
@@ -18,8 +18,9 @@ namespace HC.Tomek.Ex6.Forms.Controllers
         [HttpPost]
         public ActionResult Form(Person person)
         {
-            if (!ModelState.IsValid) return View();
-            else
+            if (!ModelState.IsValid)
+                return View();
+  
             return View("Confirmation");
         }
     }

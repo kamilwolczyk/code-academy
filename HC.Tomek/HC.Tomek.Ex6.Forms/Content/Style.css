@@ -1,0 +1,46 @@
+﻿
+html{
+    height:100%;
+}
+body{
+    border:solid 1px black;
+    margin-left:15%;
+    margin-right:15%;
+    height:100%;
+    position:relative;
+}
+
+header{
+    background-color:grey;
+}
+
+aside.ads{
+    left:0px;
+    position:fixed;
+    width:10%;
+}
+
+aside.ads1{
+    right:0px;
+    position:fixed;
+    width:10%;
+}
+
+section{
+    display:inline-block;
+}
+
+nav{
+    background-color:lightgrey;
+}
+
+footer{
+    position:absolute;
+    bottom:10px;
+    text-align:center;
+    background-color:lightgrey;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+}
+

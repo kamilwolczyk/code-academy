@@ -24,13 +24,14 @@ namespace HC.Tomek.Ex6.Forms.Models
 
         [Required]
         [StringLength(6)]
+        [RegularExpression("[0-9]{2}-[0-9]{3}")]
         public string Postcode { get; set; }
 
         [Required]
         public string Town { get; set; }
 
         [Required]
-        [BirthDayValidation()]
+        [BirthDayValidation(ErrorMessage ="BirthDate is not correct")]
         public DateTime BirthDay { get; set; }
     }
 }
