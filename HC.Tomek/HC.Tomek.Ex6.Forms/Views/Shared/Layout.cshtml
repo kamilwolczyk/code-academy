@@ -16,8 +16,8 @@
     <nav>@Html.RouteLink("Registration Form","Form")
     @Html.RouteLink("About","About-us")</nav>
     <aside class="ads1">@Html.Partial("Ads")</aside>
-    <aside class="ads">@Html.Action("Index", "Ads")</aside>
     <section>@RenderBody()</section>
+    <aside class="ads">@Html.Action("Index", "Ads")</aside>
     <footer>Copywrite 2017 @RenderSection("Number",false)</footer>
 </body>
 </html>
