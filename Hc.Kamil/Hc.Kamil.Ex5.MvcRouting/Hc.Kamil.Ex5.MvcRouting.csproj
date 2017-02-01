@@ -148,7 +148,24 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Configuration\DependencyInjectionFake.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\DateController.cs" />
+    <Compile Include="Data.Abstract\IRepository.cs" />
+    <Compile Include="Data.Abstract\Models\AllProducts.cs" />
+    <Compile Include="Data.Abstract\Models\Computer.cs" />
+    <Compile Include="Data.Abstract\Models\Mouse.cs" />
+    <Compile Include="Data.Abstract\Models\Entity.cs" />
+    <Compile Include="Data.Abstract\Models\Tablet.cs" />
+    <Compile Include="Data.Sql\Mappers\ComputerMapper.cs" />
+    <Compile Include="Data.Sql\Core\IEntityMapper.cs" />
+    <Compile Include="Data.Sql\Mappers\MouseMapper.cs" />
+    <Compile Include="Data.Sql\Mappers\TabletMapper.cs" />
+    <Compile Include="Data.Sql\Core\SqlDbConnector.cs" />
+    <Compile Include="Data.Sql\Core\BaseRepository.cs" />
+    <Compile Include="Data.Sql\Repositories\ComputerRepository.cs" />
+    <Compile Include="Data.Sql\Repositories\MouseRepository.cs" />
+    <Compile Include="Data.Sql\Repositories\TabletRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -156,6 +173,8 @@
     <Compile Include="Services\DateService.cs" />
     <Compile Include="Models\DateType.cs" />
     <Compile Include="Services\IDateService.cs" />
+    <Compile Include="Services\IProductService.cs" />
+    <Compile Include="Services\ProductService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
