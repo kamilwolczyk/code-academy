@@ -18,14 +18,14 @@ namespace HC.Tomek.Ex5.Routing.Controllers
         [HttpPost]
         public ActionResult Form(Person person)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                return View("ConfirmationView",person);
+                return View();
             }
             //write to database
 
             
-            return View();
+            return View("ConfirmationView", person);
         }
     }
 }
