@@ -1,40 +1,27 @@
 ﻿@model Person
+@using HC.Tomek.Ex5.Routing.Extensions
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/Layout.cshtml";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Form</title>
-</head>
-<body>
-    @*<form method="post">
-        <div>Name<input type="text" name="Name"/></div>
-        <div>Age<input type="text" name="Age"/></div>
-        <div><input type="submit" value="Send"/></div>
-    </form>*@
     @using (Html.BeginForm())
     {
         @Html.ValidationSummary()
             <table>
                 <tr>
-                    <td>@Html.LabelFor(model => model.Imie)</td>
-                    <td>@Html.TextBoxFor(model => model.Imie)</td>
+                    <td>@Html.LabelFor(model => model.FirstName)</td>
+                    <td>@Html.TextBoxFor(model => model.FirstName)</td>
                 </tr>
                 <tr>
-                    <td>@Html.LabelFor(model => model.Nazwisko)</td>
-                    <td>@Html.TextBoxFor(model => model.Nazwisko)</td>
+                    <td>@Html.LabelFor(model => model.Surname)</td>
+                    <td>@Html.TextBoxFor(model => model.Surname)</td>
                 </tr>
                 <tr>
-                    <td>@Html.LabelFor(model => model.Wiek)</td>
-                    <td>@Html.TextBoxFor(model => model.Wiek)</td>
+                    <td>@Html.LabelFor(model => model.Age)</td>
+                    <td>@Html.TextBoxFor(model => model.Age)</td>
                 </tr>
                 <tr>
-                    <td>@Html.LabelFor(model => model.Adres)</td>
-                    <td>@Html.TextBoxFor(model => model.Adres)</td>
+                    <td>@Html.LabelFor(model => model.Address)</td>
+                    <td>@Html.TextBoxFor(model => model.Address)</td>
                 </tr>
 
                 <tr>
@@ -43,5 +30,5 @@
 
             </table>
     }
-</body>
-</html>
+    @Html.HelloWorld(3)
+

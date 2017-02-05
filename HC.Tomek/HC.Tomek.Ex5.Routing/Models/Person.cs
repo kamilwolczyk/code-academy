@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HC.Tomek.Ex5.Routing.Validators;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,15 +10,17 @@ namespace HC.Tomek.Ex5.Routing.Models
     public class Person
     {
         [Required]
-        public string Imie { get; set; }
+        [Display(Name ="Name")]
+        public string FirstName { get; set; }
 
         [Required]
-        public string Nazwisko { get; set; }
+        public string Surname { get; set; }
 
         [Required]
-        public int Wiek { get; set; }
+        [GreaterThan(18)]
+        public int Age { get; set; }
 
-        public string Adres { get; set; }
+        public string Address { get; set; }
         
     }
 }

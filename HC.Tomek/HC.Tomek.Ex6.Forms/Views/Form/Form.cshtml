@@ -1,0 +1,42 @@
+﻿@using HC.Tomek.Ex6.Forms.Models
+@model Person
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <table>
+        <tr>
+            <td>@Html.LabelFor(model=>model.FirstName)</td>
+            <td>@Html.TextBoxFor(model=>model.FirstName)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(model => model.Surname)</td>
+            <td>@Html.TextBoxFor(model => model.Surname)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(model => model.Street)</td>
+            <td>@Html.TextBoxFor(model => model.Street)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(model => model.StreetNumber)</td>
+            <td>@Html.TextBoxFor(model => model.StreetNumber)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(model => model.Postcode)</td>
+            <td>@Html.TextBoxFor(model => model.Postcode)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(model => model.Town)</td>
+            <td>@Html.TextBoxFor(model => model.Town)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(model => model.BirthDay)</td>
+            <td>@Html.TextBoxFor(model => model.BirthDay)</td>
+        </tr>
+    </table>
+    <input type="submit" value="Send"/>
+}
+
