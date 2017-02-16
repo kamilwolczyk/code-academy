@@ -1,0 +1,27 @@
+﻿body {
+}
+
+header{
+    background-color: #333333;
+    width: 100%;
+}
+
+section{
+    padding: 10pt;
+    border: 1pt solid #000000;
+    width: 50%;
+    display: inline-block;
+}
+
+aside{
+  width: 10%;
+  display: inline-block;
+  margin: 30px;
+  background-color: yellow;
+}
+
+footer{
+   clear:both;
+}
+
+

@@ -8,14 +8,24 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Moja zajefajna strona w ASP.NET MVC</title>
+    <link rel="stylesheet" href="~/Content/Css/Style.css" />
 </head>
 <body>
-    <div><img src="/Content/Images/headchannel-logo.png" /></div>
-    <div> 
-        @Html.ActionLink("Person Form","Form","Form", null, null)
-        @Html.ActionLink("About", "Index", "About", null, null)
-    </div>
-    <div> @RenderBody()   </div>
-    <div> 2017 Radek Chmielewski   </div>
+    <header>
+        <div><img src="/Content/Images/headchannel-logo.png" />
+            @RenderSection("Title",false)
+        </div>
+        <nav> 
+            @Html.ActionLink("Person Form","Form","Form", null, null)
+            @Html.ActionLink("About", "Index", "About", null, null)
+        </nav>
+    </header>
+    <aside> @Html.Action("Index", "Ads") </aside>
+    <section> @RenderBody()   </section>
+    <aside> @Html.Action("Index","Ads") </aside>
+
+    <footer> 2017 Radek Chmielewski  
+         @RenderSection("Number",false)
+     </footer>
 </body>
 </html>
