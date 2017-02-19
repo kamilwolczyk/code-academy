@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p><b>Hello! Here is your calculator by Kate. Enjoy!</b> </p>
+    <p> Please select calculation type from dropdown list below:</p>
+    <script src="in_out.js"></script>
+
+    <p>
+        <select name="calculation_type">
+            <option value="null">please_select</option>
+            <option value="+">addition</option>
+            <option value="-">subtraction</option>
+            <option value="*">multiplication</option>
+            <option value="/">division</option>
+        </select>
+    </p>
+    
+    <p> Please enter values by clicking on button below:</p>
+    
+    <p>
+        <input type="button" value="Enter values" onclick="in_out()" />
+    </p>
+
+
+    <p> Please click on button below to show calculations result:</p>
+    <p>
+        <input type="button" value="Calculate" onclick="calculations()" />
+    </p>
+
+
+</body>
+</html>
