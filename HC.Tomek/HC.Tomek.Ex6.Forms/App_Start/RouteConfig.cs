@@ -13,6 +13,7 @@ namespace HC.Tomek.Ex6.Forms
         {
 
             routes.MapRoute("Form", "Form", new { controller = "Form", action = "Form" });
+            routes.MapRoute("Product", "Index", new { controller = "Product", action = "Index" });
             routes.MapRoute("About-us", "About-us", new { controller = "AboutUs", action = "AboutUs" });
             routes.MapRoute(
                 name: "Default",

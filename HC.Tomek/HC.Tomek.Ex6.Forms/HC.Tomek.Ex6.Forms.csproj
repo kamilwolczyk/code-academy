@@ -136,6 +136,10 @@
     <Compile Include="Controllers\AjaxController.cs" />
     <Compile Include="Controllers\API\PersonController.cs" />
     <Compile Include="Controllers\FormController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Data.Abstract\IComputerRepository.cs" />
+    <Compile Include="Data.Abstract\Models\Computer.cs" />
+    <Compile Include="Data.Sql\ComputerRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -269,6 +273,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
