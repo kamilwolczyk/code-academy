@@ -11,11 +11,18 @@ namespace HC.Radek.Ex5.Routing.Validators
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            var StateCodeString = (string)value;
-            string Pattern = @"^[0-9]{2}-[0-9]{3}$";
-            Regex RegExpression = new Regex(Pattern);
-            Match Matcher = RegExpression.Match(StateCodeString);
-            return !Matcher.Success ? new ValidationResult("Invalid City Code") : null;
+            try
+            {
+                var StateCodeString = (string)value;
+                string Pattern = @"^[0-9]{2}-[0-9]{3}$";
+                Regex RegExpression = new Regex(Pattern);
+                Match Matcher = RegExpression.Match(StateCodeString);
+                return !Matcher.Success ? new ValidationResult("Invalid City Code") : null;
+            }catch
+            {
+                return new ValidationResult("Invalid City Code");
+            }
+
         }
     }
 }

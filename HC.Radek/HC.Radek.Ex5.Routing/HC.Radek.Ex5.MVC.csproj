@@ -117,6 +117,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Css\Style.css" />
     <Content Include="Content\Images\headchannel-logo.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -124,7 +125,20 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AdsController.cs" />
     <Compile Include="Controllers\FormController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Data.Abstract\Models\Computer.cs" />
+    <Compile Include="Data.Abstract\Models\Tablet.cs" />
+    <Compile Include="Data.Abstract\Services\ProductsService.cs" />
+    <Compile Include="Data.Sql\BaseRepository.cs" />
+    <Compile Include="Data.Sql\Mappers\BaseMapper.cs" />
+    <Compile Include="Data.Sql\Mappers\ComputerMapper.cs" />
+    <Compile Include="Data.Sql\Mappers\IMapper.cs" />
+    <Compile Include="Data.Sql\Mappers\TabletMapper.cs" />
+    <Compile Include="Data.Sql\SqlConnector.cs" />
+    <Compile Include="Data.Sql\ComputerRepository.cs" />
+    <Compile Include="Data.Sql\TabletRepository.cs" />
     <Compile Include="Extensions\MyHTMLExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -147,6 +161,8 @@
     <Content Include="Views\Form\ConfirmationView.cshtml" />
     <Content Include="Views\Shared\MyLayout.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Shared\Ads.cshtml" />
+    <Content Include="Views\Ads\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -156,6 +172,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
