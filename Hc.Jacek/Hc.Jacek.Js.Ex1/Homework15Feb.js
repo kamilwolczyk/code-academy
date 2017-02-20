@@ -1,7 +1,7 @@
 /**
  * JB's homework 2017-02-15
  */
-var equation = prompt("sex")
+var equation = prompt("Podaj rownanie")
 equation = equation.replace(/\s/, "")
 var first, second, opXY;
 
