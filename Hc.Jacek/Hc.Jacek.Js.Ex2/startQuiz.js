@@ -17,7 +17,6 @@ var quiz = quiz || {};
 
         questionaire.generateAsync(questionCount, function (questions) {
             questionsArray = questions;
-
             start();
         });
 
@@ -25,7 +24,7 @@ var quiz = quiz || {};
 
     }
 
-    function showQuestion(questionIndex) {
+    function prepareQuestionText(questionIndex) {
         var currentQuestion = questionsArray[questionIndex];
         questionText = 'This is question numer' + questionIndex + "\n" + currentQuestion.text + '\n';
 
@@ -39,7 +38,7 @@ var quiz = quiz || {};
 
 
     }
-    function getAnswer(questionIndex) {
+    function showQGetA(questionIndex) {
         var currentQuestion = questionsArray[questionIndex];
         var correctanswerLetter = false;
         var addonce = false;
@@ -66,9 +65,6 @@ var quiz = quiz || {};
     }
 
     function calculateScore(questionIndex, selectedAnswerIndex) {
-        if (selectedAnswerIndex < 0)
-            return false;
-
         if (questionsArray[questionIndex].answears[selectedAnswerIndex].isCorrect) {
             score += 1;
         }
@@ -87,8 +83,8 @@ var quiz = quiz || {};
             throw new Error('QuestionsArray not found');
         }
         for (var i = 0; i < questionCount; i++) {
-            showQuestion(i)
-            getAnswer(i)
+            prepareQuestionText(i)
+            showQGetA(i)
         }
         showSummary()
     }
