@@ -3,9 +3,15 @@ function getQuestions(){
     alert('Questionaire library has not beet found!');
   }
 
-  var questionCount = 15;
+  var questionCount = 3;
 
-  questionaire.generate(questionCount, function(questions){
-    var question1 = questions[0];
-  });
+  //opcja 1 - synchroniczne pobranie (od razu dostajemy wartości)
+  var questions = questionaire.generate(questionCount);
+
+  //opcja 2 - asynchroniczne pobranie (pytania dopiero po czasie)
+  // questionaire.generateAsync(questionCount, function(questions){
+  //   var question1 = questions[0];
+  // });
+
+  quiz.start(questions);
 }
