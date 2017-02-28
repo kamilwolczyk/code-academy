@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+</head>
+<body>
+    <h1>Quiz - Exercise 2</h1>
+    <div id="top">
+        <button id="start" onClick="questionaire.getQuestions()">Start quiz</button>
+    </div>
+    <div id="center">
+        <h1 id="header"></h1>
+        <input id="radio1" type='radio' name='choices' value="0" hidden="hidden">
+        <label for="radio1" id="label0" hidden="hidden"> </label> <br />
+
+        <input id="radio2" type='radio' name='choices' value="1" hidden="hidden">
+        <label for="radio2" id="label1" hidden="hidden"> </label> <br />
+
+        <input id="radio3" type='radio' name='choices' value="2" hidden="hidden">
+        <label for="radio3" id="label2" hidden="hidden"> </label> <br />
+
+        <input id="radio4"type='radio' name='choices' value="3" hidden="hidden">
+        <label for="radio4" id="label3" hidden="hidden"> sadsadd</label> <br />
+
+        <button id="submit" hidden="hidden"></button>
+    </div>
+    <div id="bottom">
+        <h1 id="header_bottom"></h1>
+        <button id="again" onClick="questionaire.getQuestions()" hidden="hidden">Do it again</button>
+    </div>
+    <script type="text/javascript" src="getQuestionCheckAnswear.js"></script> 
+    <script type="text/javascript" src="questionaire.js"></script>
+    <script type="text/javascript" src="actions.js"></script> 
+
+</body>
+</html>
