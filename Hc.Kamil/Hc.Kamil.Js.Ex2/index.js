@@ -1,7 +1,9 @@
-function getQuestions(){
+﻿function getQuestions(){
   if(questionaire == null){
     alert('Questionaire library has not beet found!');
   }
+
+  console.log('test done');
 
   var questionCount = 3;
 
