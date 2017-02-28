@@ -3,8 +3,6 @@
     alert('Questionaire library has not beet found!');
   }
 
-  console.log('test done');
-
   var questionCount = 3;
 
   //opcja 1 - synchroniczne pobranie (od razu dostajemy wartości)
