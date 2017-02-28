@@ -1,0 +1,7 @@
+body
+  div #state1
+  div #state2
+  div #state3
+  
+get....("app").style.display="none"
+style("display":"none");
