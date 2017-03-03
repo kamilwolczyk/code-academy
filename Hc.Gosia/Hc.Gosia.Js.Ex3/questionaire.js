@@ -12,14 +12,14 @@
         return json.results.map(item=> {
             var question = {
                 text: item.question,
-                answears: [{ text: item.correct_answer, isCorrect: true }]
+                answers: [{ text: item.correct_answer, isCorrect: true }]
             };
 
             item.incorrect_answers.forEach(incorrect=> {
-                question.answears.push({ text: incorrect, isCorrect: false })
+                question.answers.push({ text: incorrect, isCorrect: false })
             });
 
-            shuffle(question.answears);
+            shuffle(question.answers);
             return question;
         });
     }
@@ -37,6 +37,5 @@
         xmlhttp.open("GET", apiUrl, true);
         xmlhttp.send();
     }
-
     questionaire.generate = getQuestions;
 })();

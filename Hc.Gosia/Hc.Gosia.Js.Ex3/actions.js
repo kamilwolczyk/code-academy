@@ -32,7 +32,7 @@
     actions.setElementAsUnchecked = setElementAsUnchecked;
 
     function findCheckedElement(name) {
-        var choice = 10;
+        var choice = null;
         choices = document.getElementsByName("choices");
         for (var i = 0; i < (choices.length) ; i++) {
             if (choices[i].checked) {
@@ -42,4 +42,9 @@
         return choice;
     }
     actions.findCheckedElement = findCheckedElement;
+
+    function changeButtonName(id,buttonName) {
+        document.getElementById(id).innerHTML = buttonName;
+    }
+    actions.changeButtonName = changeButtonName;
 })();
