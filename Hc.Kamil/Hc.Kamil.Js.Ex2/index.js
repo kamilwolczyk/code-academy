@@ -1,4 +1,4 @@
-function getQuestions(){
+﻿function getQuestions(){
   if(questionaire == null){
     alert('Questionaire library has not beet found!');
   }
