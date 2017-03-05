@@ -16,17 +16,40 @@ startPage();
 function quizPage() {
     var quizContainer = document.getElementById("quiz");
     var questionNumber = 2;
-    var questionText = document.createElement("p");
-    var questionAnswerRadio = document.createElement("input");
-    questionAnswerRadio.setAttribute("type", "radio");
-    var questionAnswerText = document.createElement("label");
+    var questionText = new Array(questionNumber);
+    
+    var questionAnswerRadio = new Array(questionNumber);
+    var questionAnswerText = new Array(questionNumber);
+    var answerControl = new Array(questionNumber);
+
     questionaire.generateAsync(questionNumber, function (questions) {
-        //for (var i = 1; i < questionNumber + 1; i++) {
-            questionText.innerHTML = questions[0].text;
-            quizContainer.appendChild(questionText);
-            questionAnswerText.innerHTML = questions[0].answears[0].text;
-            quizContainer.appendChild(questionAnswerRadio);
-            quizContainer.appendChild(questionAnswerText);
+        for (var j = 0; j < questionNumber; j++) {
+            questionText[j] = document.createElement("p");
+            questionText[j].innerHTML = questions[j].text;
+            var answerNumber = questions[j].answears.length;
+            quizContainer.appendChild(questionText[j]);
+            for (var i = 0; i < answerNumber; i++) {
+                answerControl[i] = document.createElement("p");
+                questionAnswerRadio[i] = document.createElement("input");
+                questionAnswerRadio[i].setAttribute("type", "radio");
+                questionAnswerText[i] = document.createElement("label");
+                questionAnswerText[i].innerHTML = questions[j].answears[i].text;
+                answerControl[i].appendChild(questionAnswerRadio[i]);
+                answerControl[i].appendChild(questionAnswerText[i]);
+                quizContainer.appendChild(answerControl[i]);
+
+            }
+            var nextButton = document.createElement("button");
+            nextButton.innerHTML = "Next";
+            quizContainer.appendChild(nextButton);
+            nextButton.addEventListener("click", function () {
+                //questionText[j].style.display = "none";
+                for (var i = 0; i < answerNumber; i++) {
+                    answerControl[i].style.display = "none";
+                }
+            });
+
+        }
 
         }
 

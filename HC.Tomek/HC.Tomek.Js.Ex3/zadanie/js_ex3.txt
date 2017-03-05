@@ -1,3 +1,4 @@
+1)
 body
   div #state1
   div #state2
@@ -5,3 +6,7 @@ body
   
 get....("app").style.display="none"
 style("display":"none");
+
+2)
+var x = new Date();
+ clock
