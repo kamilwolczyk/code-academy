@@ -1,0 +1,16 @@
+﻿div
+{
+    border: solid 1px black;
+    width: 200px;
+    height: 200px
+}
+
+.red-div
+{
+   background-color: red;
+}
+
+.blue-div
+{
+   background-color: blue;
+}
