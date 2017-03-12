@@ -1,0 +1,23 @@
+﻿body
+{
+}
+
+*.hidden{
+    visibility: hidden;
+}
+
+*.visible{
+    visibility: visible;
+}
+
+button{
+    background-color: #999999;
+    border: 1px solid #000000;
+    padding: 2px 10px;
+}
+
+#mainHolder{
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+}

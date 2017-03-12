@@ -1,0 +1,13 @@
+﻿body
+{
+}
+
+*.hidden{
+    visibility: hidden;
+}
+
+button{
+    background-color: #999999;
+    border: 1px solid #000000;
+    padding: 2px 10px;
+}

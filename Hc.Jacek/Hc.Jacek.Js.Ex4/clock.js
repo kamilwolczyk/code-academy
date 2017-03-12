@@ -1,30 +1,32 @@
-console.log(1);
-setTimeout(function() {
-   console.log(2) 
-}, 0);
+var clock = clock || {};
 
-for(var i = 0 ; i<100;i++){
-console.log(".")
-}
-console.log(4)
-my(oooo)
-logger(oooo)
+console.log("pocztek");
+clock(showClock);
+console.log("koniec");
 
-function oooo (){
-    console.log("sex")
+var still = false;
+
+function clock(callback) {
+    setInterval(callback, 500)
 }
 
-function my (dupa){
-    console.log(dupa)
+function showClock() {
+    if (still) {
+        document.getElementById("app").innerHTML = new Date().toLocaleString();
+    }
 }
 
-function logger(dupa){
-console.log("loggeer")
-dupa()
+function startStop() {
+    if (still) {
+        still = !still;
+        document.getElementById("but").innerHTML = "STOP"
+        console.log(still);
+    } else {
+        still = !still;
+        document.getElementById("but").innerHTML = "START"
+        console.log(still);
+
+    }
 }
 
-function strzel (x, gdykoniec){
-setTimeout(function() {
-    gdykoniec()
-}, 100);
-}
+clock.startStop = startStop;
