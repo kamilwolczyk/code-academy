@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+      <link href="main.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+      <div id="mainHolder">
+          <div id="startStage"><button value="start" onclick=" myController.getQuestions();">start</button></div>
+          <div id="questionStage" class="hidden">
+              <div id="question">question</div>
+              <!--
+              <button id="answer[0]" onclick="myController.checkQuestion(0);"></button>
+              -->
+          </div>
+          <div id="resultStage" class="hidden">Prawidłowych odpowiedzim mamy: <span id="correctAnswers"></span></div>
+      </div>
+    <script type="text/javascript" src="questionaireAsync.js"></script>    
+    <script type="text/javascript" src="view.js"></script>    
+    <script type="text/javascript" src="index.js"></script>    
+
+  </body>
+</html>
