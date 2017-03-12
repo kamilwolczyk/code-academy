@@ -15,7 +15,11 @@
 
         questionaire.generateAsync(questionCount, function (questions) {
             myQuestions = questions;
-            questionaireStart();
+            if (myQuestions.length == 0) {
+                alert('No questions found!');
+            } else {
+                questionaireStart();
+            }
         });
 
     }

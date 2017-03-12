@@ -1,25 +1,21 @@
 var myView = myView || {};
 
 (function (){
-    var stage1 = document.getElementById("stage1");
-    var stage2 = document.getElementById("stage2");
+    var startStage = document.getElementById("startStage");
+    var questionStage = document.getElementById("questionStage");
     var quest = document.getElementById("question");
     var answer = Array();
-    answer[0] = document.getElementById("answer1");
-    answer[1] = document.getElementById("answer2");
-    answer[2] = document.getElementById("answer3");
-    answer[3] = document.getElementById("answer4");
-    var stage3 = document.getElementById("stage3");
+    var resultStage = document.getElementById("resultStage");
     var correctAnswers = document.getElementById("correctAnswers");
 
-    var setView2 = function (question) {
+    var showQuestionView = function (question) {
         var value = "answer";
         var isValid = false;
 
         quest.innerHTML = question.text;
         for (var i = 0; i < 4; i++) {
             if (i < question.answears.length) {
-                value = question.answears[i].text
+                value = question.answears[i].text;
                 isValid = true;
             }else{
                 value = "";
@@ -29,16 +25,25 @@ var myView = myView || {};
         }
     }
 
-    var prepareView2 = function () {
-        prepareView(stage1, stage2);
+    var createQuestionViewDomElements = function () {
+        setContainersVisibility(startStage, questionStage);
+        for (var i = 0; i < 4; i++) {
+            //answer[i] = document.getElementById("answer["+i+"]");
+            answer[i] = document.createElement("button");
+            answer[i].myId = i;
+            questionStage.appendChild(answer[i]);
+            answer[i].addEventListener("click", function () {
+                myController.checkQuestion(this.myId)
+            },false);
+        }
     }
 
-    var setView3 = function (correctCounter) {
-        prepareView(stage2, stage3);
+    var showAnswerView = function (correctCounter) {
+        setContainersVisibility(questionStage, resultStage);
         correctAnswers.innerHTML = correctCounter;
     }
 
-    var prepareView = function (from, to) {
+    var setContainersVisibility = function (from, to) {
         from.className += " hidden";
         from.classList.remove("visible");
         to.className += " visible";
@@ -52,8 +57,9 @@ var myView = myView || {};
         }
         answer[id].innerHTML = value;
     }
-    myView.prepareQuestionView = prepareView2;
-    myView.questionView = setView2;
-    myView.summaryView = setView3;
+
+    myView.prepareQuestionView = createQuestionViewDomElements;
+    myView.questionView = showQuestionView;
+    myView.summaryView = showAnswerView;
 
 })();

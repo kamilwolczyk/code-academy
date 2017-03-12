@@ -6,10 +6,10 @@ var myClock = myClock || {};
     var active = true;
 
     var setClock = function () {
-        setTimeout(function () {
-           clock.innerHTML = new Date();
-           setClock();
-        }, 1000);
+
+        setInterval(function () {
+            clock.innerHTML = new Date();
+        },1000);
     }
 
     

@@ -7,15 +7,14 @@
   </head>
   <body>
       <div id="mainHolder">
-          <div id="stage1"><button value="start" onclick=" myController.getQuestions();">start</button></div>
-          <div id="stage2" class="hidden">
-              <div id="question">2222</div>
-              <button id="answer1" onclick="myController.checkQuestion(0);"></button>
-              <button id="answer2" onclick="myController.checkQuestion(1);"></button>
-              <button id="answer3" onclick="myController.checkQuestion(2);"></button>
-              <button id="answer4" onclick="myController.checkQuestion(3);"></button>
+          <div id="startStage"><button value="start" onclick=" myController.getQuestions();">start</button></div>
+          <div id="questionStage" class="hidden">
+              <div id="question">question</div>
+              <!--
+              <button id="answer[0]" onclick="myController.checkQuestion(0);"></button>
+              -->
           </div>
-          <div id="stage3" class="hidden">Prawidłowych odpowiedzim mamy: <span id="correctAnswers"></span></div>
+          <div id="resultStage" class="hidden">Prawidłowych odpowiedzim mamy: <span id="correctAnswers"></span></div>
       </div>
     <script type="text/javascript" src="questionaireAsync.js"></script>    
     <script type="text/javascript" src="view.js"></script>    

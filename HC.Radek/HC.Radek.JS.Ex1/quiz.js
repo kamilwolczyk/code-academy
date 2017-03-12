@@ -16,8 +16,9 @@ var quiz = quiz || {};
   function getUserAnswear(selected) {
     var selectedIndex = letters.indexOf(selected);
 
-    if(selectedIndex < 0)
-      return false;
+    if (selectedIndex < 0) {
+        return false;
+    }
     
     if(currentQuestion.answears[selectedIndex].isCorrect){
       points += 1;
