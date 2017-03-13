@@ -1,0 +1,38 @@
+﻿body{
+    display: flex;
+}
+
+div#pickersContainer{
+    width: 400px;
+    height: 600px;
+}
+
+div.colorPickerElement{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+
+div#selectedColorContainer{
+    height: 600px;
+    border-left: 1px dashed #000000;
+}
+
+div#selectedColor{
+    width: 200px;
+    height: 600px;
+    border: 1pt solid #111111;
+    margin: 10px;
+}
+
+.selected{
+    box-shadow: 5px 5px 2px #888888;
+    border: 1pt solid #000000;
+}
+
+.notSelected{
+    border: 1pt solid #aaaaaa;
+}
+
+
