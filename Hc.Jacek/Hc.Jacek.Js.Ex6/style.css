@@ -1,0 +1,68 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+.header{
+
+    background: green;
+    width: 100%;
+
+    text-align: center;
+
+
+   border: 0px;
+   padding: 0px;
+
+   margin: 0;
+}
+.content{
+
+    background: indianred;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+   overflow: hidden;
+         border: 0px;
+   padding: 0px;
+
+   margin: 0;
+}
+.footer{
+
+    background: grey;
+    width: 100%;
+   height: 50px;
+    text-align: center;
+   overflow: hidden; 
+   color:floralwhite;
+position: fixed;   
+bottom: 0;
+}
+#header-text{
+background:     seagreen;
+border: solid 1px blanchedalmond;
+position: relative;
+    width: 100px;
+   height: 150px;
+}
+#form{
+    background: silver;
+    margin: 0 10%;
+    position: relative;
+}
+
+.tab{
+background: blueviolet;
+margin-left: 25%;
+margin-right: 25%;
+height: 200px;
+}
+#form .tab button{
+    background: hotpink;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+
+}
