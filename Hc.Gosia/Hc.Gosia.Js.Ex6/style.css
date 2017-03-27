@@ -1,0 +1,70 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*p{
+    margin: 15px;
+    background: yellow;
+
+}*/
+
+.header{
+    background: green;
+    width: 50%;
+    /*height:200px;*/
+    text-align: center;
+    /*overflow: hidden;*/ /*kontener ukryty*/
+    display: block;
+
+}
+
+.content{
+    background: red;
+    width: 49%;
+    height: 200px;
+     display: block;
+}
+
+.footer{
+    background: blue;
+    color:white;
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+}
+
+.static{
+    position: static;
+}
+
+#header-text{
+    background:yellow;
+    border: 2px solid black;
+    position: relative;
+    width: 150px;
+    
+    height: 150px;
+}
+
+.tab{
+    background: purple;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 200px;
+    
+}
+
+#form{
+    background: silver;
+    margin: 0 10%;
+    position: relative;
+}
+
+#form .tab button{
+    background: pink;
+    bottom: 10px;
+    right: 20px;
+    position:absolute;
+}
+
