@@ -1,0 +1,2 @@
+Wybór 9 kolorów.
+Na kliknięcie zmiana koloru i napis: Wybrałeś kolor: <nazwa koloru>
