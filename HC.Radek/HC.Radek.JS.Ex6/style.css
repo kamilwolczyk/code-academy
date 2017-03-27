@@ -1,0 +1,60 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: green;
+    text-align: center;
+    width: 100%;
+}
+
+.content{
+    background-color: #ff0000;
+    height: 200px;
+    width: 100%;
+}
+
+.footer{
+    background-color: #00ff00;
+    border: 1px solid #000000;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.static{
+    position: static;
+}
+
+p{
+    margin: 0;
+}
+
+#header-text{
+    background: yellow;
+    border: 1px solid #000000;
+    width: 150px;
+    height: 150px;
+}
+
+.tab{
+    margin: 0 25%;
+    background-color: aqua;
+    height: 200px;
+}
+
+#form{
+    margin: 0 10%;
+    background-color: #999999;
+    position: relative;
+}
+
+#form .tab button{
+    background-color: pink;
+    bottom: 10px;
+    right: 20px;
+    position: absolute;
+}
