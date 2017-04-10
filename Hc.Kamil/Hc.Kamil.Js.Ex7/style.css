@@ -1,0 +1,16 @@
+.container {
+  background: silver;
+}
+
+header{
+  background: deepskyblue url('images/sea.jpg') no-repeat left bottom;
+  height: 400px;
+}
+
+nav {
+  background: grey;
+}
+
+footer{
+  background-color: cornflowerblue;
+}
