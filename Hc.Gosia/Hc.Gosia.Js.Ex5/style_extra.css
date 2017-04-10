@@ -1,0 +1,58 @@
+﻿#main {
+    float: left;
+    width: 200px;
+    position: relative;
+}
+
+    #main div {
+        border: solid 1px black;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        padding: 25px;
+        display: inline-block;
+    }
+
+.d1 {
+    background-color: red;
+}
+
+.d2 {
+    background-color: green;
+}
+
+.d3 {
+    background-color: blue;
+}
+
+.d4 {
+    background-color: black;
+}
+
+.d5 {
+    background-color: pink;
+}
+
+.d6 {
+    background-color: grey;
+}
+
+.d7 {
+    background-color: brown;
+}
+
+.d8 {
+    background-color: yellow;
+}
+
+#color {
+    border: solid 1px black;
+    width: 320px;
+    height: 320px;
+    float: left;
+}
+
+p {
+    position: absolute;
+    margin-left: 25px;
+}
