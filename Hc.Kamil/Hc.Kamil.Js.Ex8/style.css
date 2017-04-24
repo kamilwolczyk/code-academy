@@ -1,0 +1,8 @@
+.grid input {
+  width: 100%;
+}
+
+.grid input[type="number"]{
+  max-width: 100px;
+  border: none;
+}

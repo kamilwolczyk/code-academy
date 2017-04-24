@@ -13,3 +13,9 @@ E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kami
 E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.exe
 E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.pdb
 E:\Drive\HeadChannel\Programming school\Repository\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.csprojResolveAssemblyReference.cache
+F:\Projects\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.exe.config
+F:\Projects\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.exe
+F:\Projects\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\bin\Debug\Hc.Kamil.Ex2.Objects.pdb
+F:\Projects\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.csprojResolveAssemblyReference.cache
+F:\Projects\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.exe
+F:\Projects\code-academy\Hc.Kamil\Hc.Kamil.Ex2.Objects\obj\Debug\Hc.Kamil.Ex2.Objects.pdb

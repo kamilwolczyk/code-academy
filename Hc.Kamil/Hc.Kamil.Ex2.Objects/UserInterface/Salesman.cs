@@ -27,6 +27,7 @@ namespace Hc.Kamil.Ex2.Objects.UserInterface
 
             while (true)
             {
+                Introduction();
                 Console.WriteLine();
                 Console.WriteLine("What do you want?");
                 Console.WriteLine("[1] Buy our product");
@@ -112,6 +113,12 @@ namespace Hc.Kamil.Ex2.Objects.UserInterface
             }
 
             return product;
+        }
+
+        private void Introduction()
+        {
+            Console.WriteLine("Exercise 3 - Objects");
+            Console.WriteLine("------------------------------------");
         }
     }
 }
