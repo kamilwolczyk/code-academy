@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
 
-      <header class="row">
-        <div class="col-xs-offset-1 col-sm-2">Test</div>
-      </header>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
 
-      <nav class="row">
-        
-      </nav>
+<body>
+  <div class="container">
+    <button class="btn btn-success">
+      <span class="glyphicon glyphicon-search"></span>
+      Search
+   </button>
 
-      <div id="content" class="row">
-      </div>
+    <table class="grid table table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>Purchase order</th>
+          <th>Product</th>
+          <th>Supplier</th>
+          <th>Location</th>
+          <th>Requested qty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PO000001</td>
+          <td>FG1</td>
+          <td>S1</td>
+          <td>Katowice</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td><input type="text" value="PO000002"></td>
+          <td><input type="text" value="FG2"></td>
+          <td>S2</td>
+          <td>Katowice</td>
+          <td><input type="number" value="1000"></td>
+        </tr>
+        <tr>
+          <td>PO000003</td>
+          <td>FG3</td>
+          <td>S3</td>
+          <td>Sosnowiec</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>PO000004</td>
+          <td>FG4</td>
+          <td>S4</td>
+          <td>Warszawa</td>
+          <td>850</td>
+        </tr>
+        <tr>
+          <td>PO000005</td>
+          <td>FG5</td>
+          <td>S5</td>
+          <td>Gliwice</td>
+          <td>500</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <footer class="row">
-      Copyrights 2017 Kamil Wołczyk
-    </footer>
-    
-    </div>
+  </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
