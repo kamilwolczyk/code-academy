@@ -1,0 +1,13 @@
+done - IIS-a uprawnienia ogarnąć
+
+done - stworzyć IFootballTeamService w Services
+
+done - stworzyć konstruktor dla FootballTeamController - w tym konstruktorze ma się tworzyc nowa instancja seriwisu - przechować ją jako IFoot....
+
+done - stowrzyć okrojony model FootballTeam (...Data) w Hc.FootballApp.Web, nazwać to FootballTeamModel będzie posiadało tylko Name.
+Przepisanie modelu zaimplementować w kontrolerze FootballTeamController
+Nowy model transferowany z kontrollera do widoku powinnien być twoim obiektem a nie List<x>
+
+done - Service powinnien zwracać IEnumerable a nie typ List po to aby żaden dev nie mógł dopisywać niczego do listy
+
+zainstalować SQL-a i podłączyć zaciągnie danych z bazy
