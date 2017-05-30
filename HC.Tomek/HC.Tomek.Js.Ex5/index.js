@@ -1,14 +1,22 @@
 $(document).ready(function(){
-    $("div").click(function (event) {
+    $("div.colour").click(function (event) {
         var div = $(event.target);
 
-        if (div.hasClass("red-div")) {
-            div.addClass("blue-div");
-            div.removeClass("red-div");
+        if (div.hasClass("thickborder")) {
+            div.removeClass("thickborder")
+            
         }
         else {
-            div.addClass("red-div");
-            div.removeClass("blue-div");
+            $("div.colour").removeClass("thickborder");
+            div.addClass("thickborder");
+            var fetchedColour = $("div.thickborder").attr("class");
+            fetchedColour=fetchedColour.replace("colour", "");
+            fetchedColour = fetchedColour.replace("thickborder", "");
+            $("div.result").removeClass().addClass("result");
+            $("div.result").addClass(fetchedColour);
+            $("div.resultText").text("You chose " + fetchedColour);
         }
+
+
     })
 });
