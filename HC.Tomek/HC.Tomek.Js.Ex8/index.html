@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-success">
+            <span class="glyphicon glyphicon-search"></span>
+            Search</button>
+        <table class="grid table table-condensed table-bordered">
+            <thead>
+                <tr>
+                    <th>Purchase Order</th>
+                    <th>Product</th>
+                    <th>Supplier</th>
+                    <th>Location</th>
+                    <th class="number-cell">Requested qty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P00001</td>
+                    <td>Product Name 1</td>
+                    <td>Supplier1</td>
+                    <td>Warehouse1</td>
+                    <td class="number-cell">1000</td>
+                 </tr>
+                 <tr>
+                    <td><input type="text" value="PO00000002"></td>
+                    <td><input type="text" value="Product Name2"></td>
+                    <td>Supplier1</td>
+                    <td>Warehouse1</td>
+                    <td class="number-cell"><input type="number" value="20000"></td>
+                 </tr>
+                 <tr>
+                    <td>P00001</td>
+                    <td>Product Name 1</td>
+                    <td>Supplier1</td>
+                    <td>Warehouse1</td>
+                    <td class="number-cell">1000</td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

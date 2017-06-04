@@ -1,0 +1,19 @@
+zadanie domowe:
+napisac aplikacje "zegar" w angular 4, która bedzie prezentowala aktualna godzine. Aplikacja powinna posiadac:
+- komponent glówny
+- komponent 'footer' zawierajacy informacje o autorze
+- komponent 'topBar' w którym bedzie mozna wyswietlic prosty baner
+- komponent 'clock' wyswietlajacy zegar
+
+Dodatkowo 'clockComponent' powinien byc parametryzowany:
+- mozliwosc ustawienia czy maja byc wyswietlane sekundy czy jedynie godzina i minuta
+- mozliwosc wybrania jednego z 3 rozmiarów: small, medium, large (czcionka odpowiednio 12, 18, 24 px)
+- mozliwosc ustawienia "customowej klasy css" spoza kontrolki "clock"
+wrzucamy do Hc.{Name}.Ex.Ng1
+znalazlem tez przyczyne dlaczego nam nie dzialala aplikacja z dist
+to problem uruchamiania aplikacji z protokolu file:// a nie http://
+sciezka do plików jest skonfigurowana specjalnie dla serwórów
+mozna ustawic w pliku index.html
+<base href="/Learning/Angular2/code-school/dist/">
+oczywiscie kazdy wstawia wlasna sciezke
+ale to raczej wyrwa, ja zalecam uzywac ng serve

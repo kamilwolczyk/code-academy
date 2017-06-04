@@ -1,0 +1,28 @@
+﻿
+.container{
+    
+}
+
+.container div{
+    border: 1px solid black;
+}
+#column-left{
+    background-color: red;
+}
+
+header{
+    background: url('images/city.jpg') no-repeat center center;
+    height: 400px;
+}
+
+footer{
+    background-color: cornflowerblue;
+}
+
+nav{
+    background: grey;
+}
+
+#column-left{
+    background: red;
+}
