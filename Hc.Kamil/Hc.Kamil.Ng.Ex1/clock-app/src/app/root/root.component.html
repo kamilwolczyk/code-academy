@@ -1,4 +1,8 @@
 <app-top-bar [headerTitle]="'Aplikacja zegarek'"></app-top-bar>
+<app-member-list></app-member-list>
+
+<app-list [persons]="samplePersonCollection"></app-list>
+
 <section>
   <app-clock [configuration]="firstClock"></app-clock>
   <app-clock [configuration]="secondClock"></app-clock>
