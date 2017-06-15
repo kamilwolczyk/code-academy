@@ -3,10 +3,11 @@ table {
     width: 100%;
 }
 
-thead{
-  background-color: aqua;
+thead {
+    background-color: aqua;
 }
 
-td, th {
+td,
+th {
     border: solid 1px black;
 }
