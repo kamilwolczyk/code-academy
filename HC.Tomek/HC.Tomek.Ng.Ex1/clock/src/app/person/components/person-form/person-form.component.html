@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <td>First name:</td>
+    <td><input type="text" [(ngModel)]="firstName"></td>
+  </tr>
+  <tr>
+    <td>Last name:</td>
+    <td><input type="text" [(ngModel)]="lastName"></td>
+  </tr>
+  <tr>
+    <td>Telephone:</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <button (click)="addPerson()">Add</button>
+    </td>
+  </tr>
+</table>
+Aktualnie dodajesz {{firstName}} {{lastName}}

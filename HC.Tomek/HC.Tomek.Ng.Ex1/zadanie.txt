@@ -17,3 +17,8 @@ mozna ustawic w pliku index.html
 <base href="/Learning/Angular2/code-school/dist/">
 oczywiscie kazdy wstawia wlasna sciezke
 ale to raczej wyrwa, ja zalecam uzywac ng serve
+
+Pod zegarkiem wyswietlic tabelke: Imie, Nazwisko, numer telefonu.
+Informacje o osobach maja byc w osobnej klasie Osoba.
+W glównym komponencie (app) stowrzyc sobie liste osób i przekazac dane tabele osób do tabelki.
+Tableka ma wyswietlac tylko liste osób ale nie tworzyc osób.

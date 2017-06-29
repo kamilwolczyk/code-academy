@@ -9,15 +9,15 @@ import { Subscription } from "rxjs/Subscription";
 })
 export class ClockComponent implements OnInit {
   public clockTime: Date;
-  private subscription: Subscription; 
+  private subscription: Subscription;
   constructor() { }
 
   ngOnInit() {
     const timer = Observable.timer(0, 500);
     this.subscription = timer.subscribe(t => {
       this.clockTime = new Date();
-  });
-}
+    });
+  }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
