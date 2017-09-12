@@ -1,13 +1,4 @@
 <app-top-bar [headerTitle]="'Aplikacja zegarek'"></app-top-bar>
-<app-member-list></app-member-list>
-
-<app-person-form></app-person-form>
-
-<app-list [persons]="samplePersonCollection"></app-list>
-
-<section>
-  <app-clock [configuration]="firstClock"></app-clock>
-  <app-clock [configuration]="secondClock"></app-clock>
-  <app-clock [configuration]="thirdClock"></app-clock>
-</section>
+<app-navigation></app-navigation>
+<router-outlet></router-outlet>
 <app-footer></app-footer>

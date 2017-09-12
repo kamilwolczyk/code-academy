@@ -1,0 +1,12 @@
+a {
+    padding: 2px 20px;
+    border: solid 1px black;
+    background-color: aquamarine;
+    text-decoration: none;
+    color: blue;
+}
+
+.active{
+  background: red;
+  color: white;
+}
