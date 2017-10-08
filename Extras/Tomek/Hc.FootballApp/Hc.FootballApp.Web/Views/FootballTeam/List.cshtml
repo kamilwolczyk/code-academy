@@ -1,0 +1,16 @@
+﻿@using Hc.FootballApp.Web.Models
+@model IEnumerable<FootballTeamModel>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+        </tr>
+    }
+</table>
